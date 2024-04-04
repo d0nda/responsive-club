@@ -21,6 +21,19 @@ html {
   font-size: 2rem;
 }
 
+.nav-container a:hover {
+  cursor: pointer;
+  color: #bdbdbd;
+}
+
+@media only screen and (max-width: 450px) {
+  .nav-container ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
 /* Hero */
 
 .hero {
@@ -48,24 +61,95 @@ html {
 /* intro */
 
 .intro {
-  margin: 6rem;
+  margin: 8rem;
   display: flex;
   text-align: center;
   font-size: 2rem;
-  text-wrap: wrap;
   color: white;
 }
+
+.intro h2 {
+  inline-size: 1.4;
+}
+
+@media only screen and (max-width: 450px) {
+  .intro h2 {
+    width: 100%;
+    text-align:center;
+    text-wrap: wrap;
+    inline-size: 2;
+  }
+}
+
+/* Event */
+.event {
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.event-content {
+  display: flex;
+  margin: 3rem;
+}
+
+.event h1 {
+  font-family: "Alfa Slab One", serif;
+  text-align: center;
+  font-size: 3rem;
+  margin:  2rem;
+}
+
+.event h3 {
+  font-family: "Alfa Slab One", serif;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.event-btn {
+  margin-top: 1.2rem;
+  height: 3rem;
+  width: 30%;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  font-size: large;
+}
+
+.event-btn:hover {
+  cursor: pointer;
+  background-color: #bdbdbd;
+
+}
+
+@media screen and ( max-width: 450px) {
+  .event-content {
+    display: block;
+  }
+}
+
+
+/* Something great */
+
+.something-great .image-container img {
+  
+  width: 100%;
+  
+}
+
+
 
 /* About */
 
 .about {
-  
   text-align: center;
   color: white;
+  margin-bottom: 9rem;
 }
 
 .about-content {
   display: flex;
+  margin: 3rem;
 }
 
 .about h1 {
@@ -81,11 +165,54 @@ html {
   margin: 1rem;
 }
 
+.about p {
+  text-align: start;
+  inline-size: 1.4;
+  margin: 2rem;
+}
+
 .content img {
-  height: 70%;
+  height: 58%;
   width: 80%;
   margin: 1rem;
 }
 
+@media screen and ( max-width: 450px) {
+  .about-content {
+    display: block;
+  }
+}
 
-  
+
+/*  Join */
+
+.join {
+  text-align: center;
+  color: white;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.join-content h4 {
+  font-family: "Alfa Slab One", serif;
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.join-content img {
+  width: 70%;
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-top: 1px solid white;
+  text-align: start;
+  color: white;
+}
+
+footer .right {
+  text-align: end;
+}
