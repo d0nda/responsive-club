@@ -40,7 +40,7 @@ html {
   height: 100vh;
   width: 100%;
   margin: 0;
-  background-image: url('../images/cool-background.png');
+  background-image: url("/responsive-club/images/cool-background.png");
   background-size: cover;
   position: relative;
 }
