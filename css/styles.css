@@ -26,21 +26,14 @@ html {
   color: #bdbdbd;
 }
 
-@media only screen and (max-width: 450px) {
-  .nav-container ul {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-}
-
 /* Hero */
 
 .hero {
   height: 100vh;
   width: 100%;
   margin: 0;
-  background-image: url('/images/cool-background.png');
+  background-image: url('/images/cool-background.png'); 
+  /*github pages background-image: url('/responsive-club/images/cool-background.png');*/
   background-size: cover;
   position: relative;
 }
@@ -72,14 +65,6 @@ html {
   inline-size: 1.4;
 }
 
-@media only screen and (max-width: 450px) {
-  .intro h2 {
-    width: 100%;
-    text-align:center;
-    text-wrap: wrap;
-    inline-size: 2;
-  }
-}
 
 /* Event */
 .event {
@@ -122,12 +107,6 @@ html {
 
 }
 
-@media screen and ( max-width: 450px) {
-  .event-content {
-    display: block;
-  }
-}
-
 
 /* Something great */
 
@@ -136,7 +115,6 @@ html {
   width: 100%;
   
 }
-
 
 
 /* About */
@@ -173,14 +151,8 @@ html {
 
 .content img {
   height: 58%;
-  width: 80%;
+  width: 90%;
   margin: 1rem;
-}
-
-@media screen and ( max-width: 450px) {
-  .about-content {
-    display: block;
-  }
 }
 
 
@@ -193,9 +165,9 @@ html {
   margin-bottom: 5rem;
 }
 
-.join-content h4 {
+.join-content h1 {
   font-family: "Alfa Slab One", serif;
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 2rem;
 }
 
@@ -203,6 +175,8 @@ html {
   width: 70%;
 }
 
+
+/* Footer */
 
 footer {
   display: flex;
@@ -215,4 +189,326 @@ footer {
 
 footer .right {
   text-align: end;
+}
+
+
+
+@media only screen and (max-width: 860px) {
+  /* Header / Nav */
+  /* Hero */
+
+  .hero {
+    height: 50vh;
+    max-width: 100%;
+    background-image: url('/images/cool-background.png'); 
+    /*github pages background-image: url('/responsive-club/images/cool-background.png');*/
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+    color: white;
+    font-family: "Alfa Slab One", serif;
+    font-size: 45px;
+    margin: 0 auto;
+  }
+
+  /* intro */
+  .intro {
+    margin: 0 auto;
+  }
+
+
+  .intro h2 {
+    margin: 20px auto;
+    font-size: 60%;
+  }
+  /* Event */
+
+  .event-content {
+    display: block;
+  }
+
+  .event h1 {
+    font-family: "Alfa Slab One", serif;
+    text-align: center;
+    font-size: 1.9rem;
+    margin: 1.8rem;
+  }
+
+  .event-btn {
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    height: 2.5rem;
+    width: 50%;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    font-size: large;
+  }
+  
+  .event-btn:hover {
+    cursor: pointer;
+    background-color: #bdbdbd;
+  
+  }
+
+  /* Something great */
+
+  /* About */
+
+  .about-content {
+    display: block;
+  }
+
+  .about h1 {
+    font-family: "Alfa Slab One", serif;
+    text-align: center;
+    font-size: 1.9rem;
+    margin:  1.8rem;
+  }
+  
+  .about h3 {
+    font-family: "Alfa Slab One", serif;
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+
+  /*  Join */
+
+  .join-content h1 {
+    font-family: "Alfa Slab One", serif;
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
+  
+  /* Footer */
+}
+
+@media only screen and (max-width: 640px) {
+  /* Header / Nav */
+  
+  /* Hero */
+  .hero {
+    height: 50vh;
+    max-width: 100%;
+    background-image: url('/images/cool-background.png'); 
+    /*github pages background-image: url('/responsive-club/images/cool-background.png');*/
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+    color: white;
+    font-family: "Alfa Slab One", serif;
+    font-size: 45px;
+    margin: 0 auto;
+  }
+  /* intro */
+  .intro {
+    margin: 0 auto;
+  }
+
+
+  .intro h2 {
+    margin: 20px auto;
+    font-size: 60%;
+  }
+
+  /* Event */
+
+  .event-content {
+    display: block;
+  }
+
+  .event h1 {
+    font-family: "Alfa Slab One", serif;
+    text-align: center;
+    font-size: 1.9rem;
+    margin: 1.8rem;
+  }
+
+  .event-btn {
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    height: 2.5rem;
+    width: 50%;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    font-size: large;
+  }
+  
+  .event-btn:hover {
+    cursor: pointer;
+    background-color: #bdbdbd;
+  
+  }
+
+
+  /* Something great */
+
+  /* About */
+
+  .about-content {
+    display: block;
+  }
+
+  .about h1 {
+    font-family: "Alfa Slab One", serif;
+    text-align: center;
+    font-size: 1.9rem;
+    margin:  1.8rem;
+  }
+  
+  .about h3 {
+    font-family: "Alfa Slab One", serif;
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+
+  /*  Join */
+  .join-content h1 {
+    font-family: "Alfa Slab One", serif;
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
+
+  /* Footer */
+}
+
+@media only screen and (max-width: 480px) {
+  
+  /* Header / Nav */
+  .logo {
+    font-family: "Alfa Slab One", serif;
+    font-size: 1rem;
+    padding-right: 7px;
+  }
+
+  .nav-container a {
+    font-size: 11px;
+    margin: 0 auto;
+  }
+
+  .nav-container ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .nav-container a:hover {
+    cursor: pointer;
+    color: #bdbdbd;
+  }
+
+  /* Hero */
+  .hero {
+    height: 50vh;
+    max-width: 100%;
+    background-image: url('/images/cool-background.png'); 
+    /*github pages background-image: url('/responsive-club/images/cool-background.png');*/
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+    color: white;
+    font-family: "Alfa Slab One", serif;
+    font-size: 25px;
+    margin: 0 auto;
+  }
+
+  /* intro */
+  .intro {
+    margin: 0 auto;
+  }
+
+
+  .intro h2 {
+    margin: 20px auto;
+    font-size: 60%;
+  }
+
+  /* Event */
+  .event-content {
+    display: block;
+  }
+
+  .event h1 {
+    font-family: "Alfa Slab One", serif;
+    text-align: center;
+    font-size: 1.9rem;
+    margin: 1.8rem;
+  }
+
+  .event-btn {
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    height: 2.5rem;
+    width: 50%;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    font-size: large;
+  }
+  
+  .event-btn:hover {
+    cursor: pointer;
+    background-color: #bdbdbd;
+  
+  }
+
+  /* Something great */
+  .something-great .image-container img {
+    display: flex;
+    margin: 0 auto;
+    max-width: 70%;
+  }
+  /* About */
+  .about-content {
+    display: block;
+  }
+
+  .about h1 {
+    font-family: "Alfa Slab One", serif;
+    text-align: center;
+    font-size: 1.9rem;
+    margin:  1.8rem;
+  }
+  
+  .about h3 {
+    font-family: "Alfa Slab One", serif;
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .about p {
+    text-align: start;
+    inline-size: 1.4;
+    margin: 1rem;
+  }
+  /*  Join */
+  
+  .join-content h1 {
+    font-family: "Alfa Slab One", serif;
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
+  /* Footer */
 }
