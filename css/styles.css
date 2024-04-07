@@ -32,12 +32,8 @@ html {
   height: 100vh;
   width: 100%;
   margin: 0;
-<<<<<<< HEAD
   background-image: url('/images/cool-background.png'); 
   /*github pages background-image: url('/responsive-club/images/cool-background.png');*/
-=======
-  background-image: url('/responsive-club/images/cool-background.png');
->>>>>>> acaacaa2e75252813cef30cdbf8298ca371cb87d
   background-size: cover;
   position: relative;
 }
@@ -194,7 +190,6 @@ footer {
 footer .right {
   text-align: end;
 }
-<<<<<<< HEAD
 
 
 
@@ -517,5 +512,3 @@ footer .right {
   }
   /* Footer */
 }
-=======
->>>>>>> acaacaa2e75252813cef30cdbf8298ca371cb87d
